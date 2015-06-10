@@ -4,10 +4,9 @@ maintainer_email 'camden@northpage.com'
 license          'Apache 2.0'
 description      'Installs/Configures yajsw'
 long_description 'Installs/Configures yajsw'
-version          '0.2.5'
+version          '0.2.6'
 
-depends 'maven'
 depends 'git'
 
 depends 'libarchive', '~> 0.4.1'
-depends 'java', '~> 1.28.0'
+depends 'java', '>= 1.28.0'

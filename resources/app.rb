@@ -31,6 +31,7 @@ attribute :maxmemory,   :kind_of => Integer, :default => 256
 attribute :classpath,   :kind_of => Array, :default => []
 attribute :additional,  :kind_of => Array, :default => []
 attribute :parameters,  :kind_of => Array, :default => []
+attribute :settings,    :kind_of => Hash, :default => {}
 attribute :logfile,     :kind_of => Hash, :default => { 'maxfiles' => 10,
                                                         'maxsize' => '10m',
                                                         'loglevel' => 'INFO' }

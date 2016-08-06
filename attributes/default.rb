@@ -30,6 +30,7 @@ default['yajsw']['apps'] = [{
                               'classpath' => [],
                               'additional' => ['-server', '-Dfile.encoding=UTF-8'],
                               'parameters' => [],
+                              'settings' => {},
                               'logfile' => {
                                 'maxfiles' => 10,
                                 'maxsize' => '10m',

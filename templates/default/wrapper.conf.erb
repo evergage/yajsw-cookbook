@@ -296,3 +296,7 @@ wrapper.java.app.mainclass=<%= @mainclass %>
 <% if @jar -%>
 wrapper.java.app.jar=<%= @jar %>
 <% end %>
+
+<% @settings.each_pair do |setting_name, setting_value| -%>
+wrapper.<%= setting_name %> = <%= setting_value %>
+<% end %>

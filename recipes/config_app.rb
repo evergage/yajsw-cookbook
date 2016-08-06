@@ -34,6 +34,7 @@ apps.each do |app|
     classpath app['classpath']
     additional app['java_additional']
     parameters app['parameters']
+    settings app['settings']
     logfile app['logfile']
     create_user true
     action [:create, :update]

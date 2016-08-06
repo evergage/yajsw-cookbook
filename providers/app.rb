@@ -135,7 +135,8 @@ def populate_wrapper
       :mainclass => new_resource.mainclass,
       :initmemory => new_resource.initmemory,
       :maxmemory => new_resource.maxmemory,
-      :logfile => new_resource.logfile
+      :logfile => new_resource.logfile,
+      :settings => new_resource.settings
     })
     owner appuser
     mode 0755

@@ -8,5 +8,5 @@ version          '0.2.8'
 
 depends 'git'
 
-depends 'libarchive', '~> 0.4.1'
+depends 'libarchive', '~> 0.4.4'
 depends 'java', '>= 1.28.0'

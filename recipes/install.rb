@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: yajsw-cookbook
-# Recipe:: prep
+# Recipe:: install
 #
-# Copyright (C) 2014 NorthPage
+# Copyright (C) 2015-2016 NorthPage
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,4 +17,12 @@
 # limitations under the License.
 #
 
-include_recipe "java::default"
+yajsw_install 'default' do
+  url node['yajsw']['url']
+  marker node['yajsw']['marker']
+  version node['yajsw']['version']
+  basedir node['yajsw']['basedir']
+  checksum node['yajsw']['checksum']
+  user node['yajsw']['user']
+  action :create
+end
